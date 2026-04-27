@@ -1,0 +1,86 @@
+# Soukromá konfigurace (WiFi heslo, MQTT, IP adresy) – NIKDY necommitovat!
+config_local.h
+
+# Arduino IDE
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+
+# Compiled object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+*.so
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.elf
+
+# Arduino IDE specific
+.vscode/
+.vscode-server/
+build/
+dist/
+
+# Platform specific
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE files
+.idea/
+*.swp
+*.swo
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# Environment variables
+.env
+.env.local
+
+# Node modules (if any)
+node_modules/
+
+# Build artifacts
+*.bin
+*.hex
+*.elf
+
+# Debug files
+*.dSYM/
+*.su

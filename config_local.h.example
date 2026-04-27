@@ -1,0 +1,13 @@
+#pragma once
+
+// Zkopíruj tento soubor jako config_local.h a vyplň své hodnoty.
+// Soubor config_local.h je v .gitignore a NIKDY se nenahraje na GitHub!
+
+// --- WiFi ---
+constexpr const char* WIFI_NAME     = "YOUR_WIFI_SSID";
+constexpr const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+constexpr const char* WIFI_HOSTNAME = "Locker";
+
+// --- MQTT Server ---
+constexpr const char* MQTT_SERVER = "192.168.x.x";   // IP Vašeho brokeru
+constexpr uint16_t    MQTT_PORT   = 1883;
