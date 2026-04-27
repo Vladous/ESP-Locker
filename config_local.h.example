@@ -11,3 +11,10 @@ constexpr const char* WIFI_HOSTNAME = "Locker";
 // --- MQTT Server ---
 constexpr const char* MQTT_SERVER = "192.168.x.x";   // IP Vašeho brokeru
 constexpr uint16_t    MQTT_PORT   = 1883;
+
+// --- Povolené RFID karty (UID jako HEX string) ---
+constexpr const char* ALLOWED_UIDS[] = {
+  "AA BB CC DD",   // karta 1 – přečti UID ze sériového monitoru
+  "11 22 33 44",   // karta 2
+};
+constexpr size_t ALLOWED_UIDS_COUNT = sizeof(ALLOWED_UIDS) / sizeof(ALLOWED_UIDS[0]);

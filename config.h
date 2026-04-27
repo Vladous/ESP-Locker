@@ -25,7 +25,7 @@ constexpr const char* VERSION = "0.3";
 #include "config_local.h"
 // --- Globální stav ---
 inline String wifiHostName = WIFI_HOSTNAME;
-inline String deskName     = "ESP8266";
+inline String deskName     = "ESP32";
 
 // MQTT
 inline bool  odeslat       = true;
@@ -39,12 +39,7 @@ inline bool  Lock          = false;
 #define RFID_MOSI  19
 #define RFID_RST   4
 
-// Povolené karty (UID). Pole, kde je každá karta jako string (HEX).
-constexpr const char* ALLOWED_UIDS[] = {
-  "A9 54 53 D5",   // testovací karta 1
-  "12 34 56 78",   // testovací karta 2
-};
-constexpr size_t ALLOWED_UIDS_COUNT = sizeof(ALLOWED_UIDS) / sizeof(ALLOWED_UIDS[0]);
+// Povolené karty (UID) jsou definovány v config_local.h (gitignorováno)
 
 // --- Konfigurace servo
 #define SERVO_PIN 13
